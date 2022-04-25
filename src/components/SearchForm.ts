@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { API_URL } from '../config'
 import { getVideo } from '../models/dailymotionType'
+import { renderWebVideo } from './webVideoCard'
 
 export const $ = document.querySelector.bind(document)
 
@@ -32,9 +33,17 @@ export const searchVideos = async () => {
 
         if(response.status == 200) {
             const {data} = response
+            const {list} = data
+
+            console.log(list)
 
             const resultArea = <HTMLDivElement>$('#result-area')
             resultArea.innerHTML = ''
+
+            list.forEach((jsonObj: any) => {
+                const webVideoThumb = getVideo(jsonObj)
+                renderWebVideo(webVideoThumb, resultArea)
+            })
 
             // data.forEach((jsonObj: any) => {
                 // const {list} = jsonObj

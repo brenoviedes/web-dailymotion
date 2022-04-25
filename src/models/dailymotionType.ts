@@ -2,7 +2,7 @@ type webVideo = {
     id: string 
     title: string
     thumbnail?: string
-    category: string
+    category?: string
 }
 
 export default webVideo
