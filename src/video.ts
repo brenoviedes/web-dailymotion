@@ -1,7 +1,7 @@
-import './style.css'
-import './response.css'
-import './fonts.css'
-import './keyframes.css'
+import './css/style.css'
+import './css/response.css'
+import './css/fonts.css'
+
 import { API_URL } from './config'
 import axios from 'axios'
 import { getVideo } from './models/dailymotionType'

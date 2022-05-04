@@ -1,0 +1,81 @@
+@media screen and (max-width: 1200px) {
+  #search-area {
+    width: 95%;
+  }
+
+  .video-card {
+    font-size: 80%;
+  }
+
+  #videoRendered {
+    max-width: 100%;
+    padding-bottom: 56.25%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #logo {
+    font-size: 1rem;
+  }
+
+  #search-form input {
+    width: 280px;
+  }
+
+  .video-card { 
+    max-width: 45%;
+  } 
+}
+
+
+@media screen and (max-width: 600px) { 
+  
+    #app {
+      width: 100%;
+    }
+
+    #app h2 {
+      font-size: 80%;
+    } 
+
+    #search-area {
+      display: felx;
+      flex-direction: column;
+    }
+
+    #search-area #logo {
+      margin-bottom: 10px;
+    }
+
+    #search-form  {
+      width: 90%;
+    }
+
+    #search-form input {
+      width: 100%;
+      display: block;
+      margin: auto;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+
+    #search-form button {
+      display: block;
+      margin: auto;
+      border-radius: 15px;
+    }
+
+    #result-area {
+      width: 95%;
+    }
+
+    .video-card {
+      max-width: 100%;
+      font-size: 70%;
+      width: 100%;
+    }
+
+    .video-banner img {
+      width: 100%;
+    }
+}
